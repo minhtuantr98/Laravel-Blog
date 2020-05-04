@@ -1,12 +1,5 @@
 <template>
 <div>
-    <div v-if="errors && errors.length" class="alert alert-danger">
-            <ul>
-                <li v-bind:key="error" v-for="error of errors">
-                    {{error.message}}
-                </li>
-            </ul>
-    </div>
     <form action="/admin/user" method="post" @submit.prevent="createUser()">
         <div class="form-group">
         <label>Name</label>
@@ -22,6 +15,7 @@
         <input class="btn btn-primary" type="submit" value="Create">
         </div>
     </form>
+    
 </div>
 </template>
 

@@ -84,7 +84,6 @@ class CategoriesController extends Controller
             'category_id' => Category::orderBy('id', 'desc')->first()->id,
             'locale' => 'jp'
         ]);
-
         return (['message' => 'Success']);
     }
     

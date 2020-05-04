@@ -21,7 +21,6 @@ class PasswordController extends Controller
         $this->validate($request, [
             'old_password' => ['required', 'string', new OldPassword],
             'password' => 'required|confirmed',
-
         ]);
         
         Auth::user()   
